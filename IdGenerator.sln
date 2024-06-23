@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowflake", "Snowflake\Snowflake.csproj", "{476763D5-8278-402A-811A-B6C3F3B7D90E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nano", "Nano\Nano.csproj", "{BE3FAD86-0350-4A81-B412-F40C8F2AAE72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{476763D5-8278-402A-811A-B6C3F3B7D90E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{476763D5-8278-402A-811A-B6C3F3B7D90E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{476763D5-8278-402A-811A-B6C3F3B7D90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{476763D5-8278-402A-811A-B6C3F3B7D90E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE3FAD86-0350-4A81-B412-F40C8F2AAE72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3FAD86-0350-4A81-B412-F40C8F2AAE72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3FAD86-0350-4A81-B412-F40C8F2AAE72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3FAD86-0350-4A81-B412-F40C8F2AAE72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5CB1732-3031-422A-BF33-AF7AE5013049}
+	EndGlobalSection
+EndGlobal

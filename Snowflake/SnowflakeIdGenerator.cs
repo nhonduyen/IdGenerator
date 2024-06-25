@@ -2,8 +2,8 @@
 {
     public class SnowflakeIdGenerator
     {
-        // Epoch timestamp in milliseconds (customize if needed)
-        private const long Epoch = 1577836800000L; // January 1, 2020
+        // Define the epoch start date (e.g., January 1, 2020)
+        private static readonly DateTime EpochStart = new DateTime(2020, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 
         // Bit allocations for each component
         private const int TimestampBits = 41;
@@ -60,15 +60,15 @@
 
                 _lastTimestamp = timestamp;
 
-                return ((timestamp - Epoch) << TimestampShift) |
+                return ((timestamp << TimestampShift) |
                        (_machineId << MachineIdShift) |
-                       _sequence;
+                       _sequence);
             }
         }
 
         private static long GetCurrentTimestamp()
         {
-            return DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+            return (long)(DateTime.UtcNow - EpochStart).TotalMilliseconds;
         }
 
         private static long WaitForNextMillisecond(long lastTimestamp)
